@@ -4,13 +4,26 @@ Este proyecto consiste en crear un dispensador automático de gel hidroalcoholic
 
 # Materiales
 
+* Arduino
+* Sensor HC-SR04
+* Relé (compatible con Arduino)
+* Bomba de agua (3V-5V)
+* Tubo riego
+* Depósito de agua
+* Portapilas
+* Pilas
+* Latiguillos
+
 # Diseño
 
 # Esquema eléctrico
 
+![](esquema_dispensador_gel_bb.png)
+
+
 # Programación
 
-## Progamación para comprobar los valores del sensor HW-080
+## Progamación para comprobar los valores del sensor HC-SR04
 
 ```arduino
 /**
@@ -45,7 +58,12 @@ void loop() {
 
 # Enlaces de ayuda
 
+* https://create.arduino.cc/projecthub/agriculturaelectronica/bomba-de-agua-con-arduino-602930
+
 * https://github.com/robotando/Practicas-ElCableAmarillo/tree/master/medidor-de-distancias
+
+* https://www.youtube.com/watch?v=4KrkhyyxKEY
+
 
 
 

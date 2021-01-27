@@ -4,9 +4,21 @@ Este proyecto consiste en crear un riego automático para una maceta pequeña co
 
 # Materiales
 
+* Arduino
+* Sensor HW-080 (con módulo)
+* Relé (compatible con Arduino)
+* Bomba de agua (3V-5V)
+* Tubo riego
+* Depósito de agua
+* Portapilas
+* Pilas
+* Latiguillos
+
 # Diseño
 
 # Esquema eléctrico
+
+![](esquema_maceta_bb.png)
 
 # Programación
 
