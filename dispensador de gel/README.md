@@ -64,6 +64,8 @@ void loop() {
 
 * https://www.youtube.com/watch?v=4KrkhyyxKEY
 
+* https://edprogg.wordpress.com/2020/07/13/tutorial-dispensador-automatizado-de-gel-con-arduino/
+
 
 
 
