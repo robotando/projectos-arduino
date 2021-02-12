@@ -26,8 +26,13 @@ Este proyecto consiste en crear un riego automático para una maceta pequeña co
 
 ```arduino
 int sensor=A0;
+int rele=8;
+int valorUmbral=10;
+int tiempoRiego=2000;
+int tiempoentrecheck=10000;
 void setup(){
     pinMode(sensor, INPUT);
+    pinMode(rele, OUTPUT);
     Serial.begin(9600);
   }
  void loop(){
@@ -36,16 +41,16 @@ int valorHumedad = map(analogRead(sensor), 0, 1023, 100, 0);
 Serial.print("Humedad: ");
 Serial.print(valorHumedad);
 Serial.println("%"); 
- if (valorHumedad < 70) {
-      digitalWrite(13, HIGH);
-      delay(2000);
-      digitalWrite(13, LOW);
+ if (valorHumedad < valorUmbral) {
+      digitalWrite(rele, HIGH);
+      delay(tiempoRiego);
+      digitalWrite(rele, LOW);
     }
   else {
-      digitalWrite(13, LOW);
+      digitalWrite(rele, LOW);
 
     }
-delay(10000);
+delay(tiempoentrecheck);
 
   }
 
