@@ -20,6 +20,10 @@ Este proyecto consiste en crear un dispensador automático de gel hidroalcoholic
 
 ![](esquema_dispensador_gel_bb.png)
 
+## Prueba con LED y con relé
+
+![](prueba-led.gif)
+![](prueba-rele.gif)
 
 # Programación
 
