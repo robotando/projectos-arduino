@@ -22,7 +22,7 @@ Este proyecto consiste en crear un riego automático para una maceta pequeña co
 
 # Programación
 
-## Progamación para comprobar los valores del sensor HW-080
+## Progamación para comprobar los valores del sensor HW-080 y artivar un relé
 
 ```arduino
 int sensor=A0;
@@ -36,7 +36,17 @@ int valorHumedad = map(analogRead(sensor), 0, 1023, 100, 0);
 Serial.print("Humedad: ");
 Serial.print(valorHumedad);
 Serial.println("%"); 
-delay(100);
+ if (valorHumedad < 70) {
+      digitalWrite(13, HIGH);
+      delay(2000);
+      digitalWrite(13, LOW);
+    }
+  else {
+      digitalWrite(13, LOW);
+
+    }
+delay(10000);
+
   }
 
 ```
